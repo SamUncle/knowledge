@@ -55,18 +55,8 @@
     [str2 copy];
     NSLog(@"%ld %ld",[str retainCount],[str2 retainCount]);
     
-    NSLog(@"%f",[self getBjLxWith:3 withBenj:10000]);
 }
--(double)getBjLxWith:(double)year withBenj:(double)money
-{
-    double sum = money;
-    double lixi = 0.0;
-    for (int i = 0; i < year + 1; i++) {
-        lixi = lixi + year * 2.79 ;
-    }
-    sum += lixi;
-    return sum;
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
